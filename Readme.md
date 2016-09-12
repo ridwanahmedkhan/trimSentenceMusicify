@@ -1,0 +1,1 @@
+This project is created with the help of a open source library called midiutil (https://github.com/duggan/midiutil) for running in Linux system. To run this project, you need to install timidity, a midi file player to play the sound that is produced by the code.
