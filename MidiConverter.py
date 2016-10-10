@@ -2,9 +2,11 @@
 from midiutil.MidiFile import MIDIFile
 import os
 
-
-musicString = 'Mind Music Machine Lab'
-countChars = len(musicString)
+class MidiConverter:
+	
+	def stringToMidiConverter(self, musicString):  
+		#musicString = 'Mind Music Machine Lab'
+		countChars = len(musicString)
 
 		print "The lenght of the musicString is %d" % (countChars)
 
@@ -23,7 +25,7 @@ countChars = len(musicString)
 			track += 1
 			time +=1
 
-		midiFilename = "trim.mid"
+		midiFilename = "tweet.mid"
 		binfile = open(midiFilename, 'wb')
 		musicMIDI.writeFile(binfile)
 		binfile.close()
